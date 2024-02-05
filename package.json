@@ -4,8 +4,8 @@
   "private": true,
   "scripts": {
     "start": "per-env",
-    "start:development": "SET NODE_ENV=production && nodemon -r dotenv/config ./bin/www",
-    "start:production": "SET NODE_ENV=production && node ./bin/www"
+    "start:development": "export NODE_ENV=development && nodemon -r dotenv/config ./bin/www",
+    "start:production": "export NODE_ENV=production && node ./bin/www"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
